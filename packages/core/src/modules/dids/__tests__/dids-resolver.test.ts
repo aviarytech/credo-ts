@@ -113,4 +113,8 @@ describe('dids', () => {
       },
     })
   })
+
+  it('should resolve a did:tdw did', async () => {
+    const did = await agent.dids.resolve('did:tdw:1234567890')
+  })
 })
