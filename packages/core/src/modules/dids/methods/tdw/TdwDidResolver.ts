@@ -1,15 +1,14 @@
 import type { AgentContext } from '../../../../agent'
 import type { DidResolver } from '../../domain/DidResolver'
-import type { ParsedDid, DidResolutionResult, DidResolutionOptions } from '../../types'
+import type { DidResolutionResult } from '../../types'
 
-import { Resolver } from 'did-resolver'
 import { resolveDID } from 'trustdidweb-ts'
 
 import { JsonTransformer } from '../../../../utils/JsonTransformer'
 import { DidDocument } from '../../domain'
 
 export class TdwDidResolver implements DidResolver {
-  public readonly supportedMethods
+  public readonly supportedMethods = ['tdw']
 
   public readonly allowsCaching = true
   public readonly allowsLocalDidRecord = true
@@ -18,35 +17,22 @@ export class TdwDidResolver implements DidResolver {
   // private _resolverInstance = new Resolver()
   // private resolver = didWeb.getResolver()
 
-  public constructor() {
-    // this.supportedMethods = Object.keys(this.resolver)
-  }
-
-  public async resolve(
-    agentContext: AgentContext,
-    did: string,
-    parsed: ParsedDid,
-    didResolutionOptions: DidResolutionOptions
-  ): Promise<DidResolutionResult> {
+  public async resolve(agentContext: AgentContext, did: string): Promise<DidResolutionResult> {
     const result = await resolveDID(did)
-    console.log('result', result)
-    // const result = await di(did, parsed, this._resolverInstance, didResolutionOptions)
 
     let didDocument = null
 
-    // If the did document uses the deprecated publicKey property
-    // we map it to the newer verificationMethod property
-    if (!result.didDocument?.verificationMethod && result.didDocument?.publicKey) {
-      result.didDocument.verificationMethod = result.didDocument.publicKey
-    }
-
-    if (result.didDocument) {
-      didDocument = JsonTransformer.fromJSON(result.didDocument, DidDocument)
+    if (result.doc) {
+      didDocument = JsonTransformer.fromJSON(result.doc, DidDocument)
     }
 
     return {
-      ...result,
       didDocument,
+      didResolutionMetadata: {
+        servedFromCache: false,
+        servedFromDidRecord: false,
+      },
+      didDocumentMetadata: result.meta,
     }
   }
 }
