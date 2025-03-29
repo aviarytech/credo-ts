@@ -1,0 +1,1 @@
+export { WebvhDidResolver } from './WebvhDidResolver'
