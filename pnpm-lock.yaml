@@ -1338,8 +1338,8 @@ importers:
         specifier: ^4.4.0
         version: 4.4.1
       typescript:
-        specifier: ~4.9.5
-        version: 4.9.5
+        specifier: ~5.5.2
+        version: 5.5.4
 
   samples/extension-module:
     dependencies:
@@ -10639,9 +10639,15 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   typeorm@0.3.20:
     resolution: {integrity: sha512-sJ0T08dV5eoZroaq9uPKBoNcGslHBR4E4y+EBHs//SiGbblGe7IeduP/IH4ddCcj0qp3PHwDwGnuvqEAnKlq/Q==}
     engines: {node: '>=16.13.0'}
+=======
+  typescript@5.5.4:
+    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+    engines: {node: '>=14.17'}
+>>>>>>> ceaac3ca (chore(webvh): upgrade TypeScript and clean up configuration)
     hasBin: true
     peerDependencies:
       '@google-cloud/spanner': ^5.18.0
@@ -25815,6 +25821,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   typeorm@0.3.20(ts-node@10.9.2(@swc/core@1.7.40)(@types/node@18.18.8)(typescript@5.5.4)):
     dependencies:
       '@sqltools/formatter': 1.2.5
@@ -25857,6 +25864,9 @@ snapshots:
 =======
 =======
   typescript@4.9.5: {}
+=======
+  typescript@5.5.4: {}
+>>>>>>> ceaac3ca (chore(webvh): upgrade TypeScript and clean up configuration)
 
 >>>>>>> 0357c1cb (feat(webvh): Added did:webvh resolver)
   typescript@5.8.3: {}
