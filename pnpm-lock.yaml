@@ -857,6 +857,9 @@ importers:
       '@multiformats/base-x':
         specifier: ^4.0.1
         version: 4.0.1
+      '@stablelib/ed25519':
+        specifier: ^2.0.2
+        version: 2.0.2
       class-transformer:
         specifier: ^0.5.1
         version: 0.5.1
@@ -864,8 +867,8 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       didwebvh-ts:
-        specifier: ^2.2.0
-        version: 2.2.0
+        specifier: ^2.3.2
+        version: 2.3.2
       json-canonicalize:
         specifier: ^1.0.6
         version: 1.0.6
@@ -2815,7 +2818,6 @@ packages:
 
   '@sphereon/kmp-mdoc-core@0.2.0-SNAPSHOT.26':
     resolution: {integrity: sha512-QXJ6R8ENiZV2rPMbn06cw5JKwqUYN1kzVRbYfONqE1PEXx1noQ4md7uxr2zSczi0ubKkNcbyYDNtIMTZIhGzmQ==}
-    bundledDependencies: []
 
   '@sphereon/pex-models@2.3.2':
     resolution: {integrity: sha512-foFxfLkRwcn/MOp/eht46Q7wsvpQGlO7aowowIIb5Tz9u97kYZ2kz6K2h2ODxWuv5CRA7Q0MY8XUBGE2lfOhOQ==}
@@ -4064,8 +4066,8 @@ packages:
   did-resolver@4.1.0:
     resolution: {integrity: sha512-S6fWHvCXkZg2IhS4RcVHxwuyVejPR7c+a4Go0xbQ9ps5kILa8viiYQgrM4gfTyeTjJ0ekgJH9gk/BawTpmkbZA==}
 
-  didwebvh-ts@2.2.0:
-    resolution: {integrity: sha512-yVgEkv3c+6wPnS7uGVZ7xoXx/0rGUFEP86Y259VLK6soIQcs8rYV5ATO7vP1jptb721vscYNHnMX8A6d0LQixQ==}
+  didwebvh-ts@2.3.2:
+    resolution: {integrity: sha512-DmD/s8GibOvV6hcfcHLFBbCNcDZlrbutwcb9wA9Qwwag79dco1wKqZBljO0+A/E61QrLbPvSmZeUqGyHGs6GzQ==}
     hasBin: true
 
   diff-sequences@29.6.3:
@@ -9242,7 +9244,7 @@ snapshots:
 
   '@confio/ics23@0.6.8':
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       protobufjs: 6.11.4
 
   '@cosmjs/amino@0.30.1':
@@ -9274,7 +9276,7 @@ snapshots:
       '@cosmjs/encoding': 0.33.1
       '@cosmjs/math': 0.33.1
       '@cosmjs/utils': 0.33.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       bn.js: 5.2.1
       elliptic: 6.6.1
       libsodium-wrappers-sumo: 0.7.15
@@ -12444,7 +12446,7 @@ snapshots:
     dependencies:
       '@noble/ciphers': 1.2.1
       '@noble/curves': 1.8.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.1
       canonicalize: 2.0.0
       did-resolver: 4.1.0
@@ -12454,7 +12456,7 @@ snapshots:
 
   did-resolver@4.1.0: {}
 
-  didwebvh-ts@2.2.0:
+  didwebvh-ts@2.3.2:
     dependencies:
       '@noble/hashes': 1.8.0
       json-canonicalize: 1.0.6
