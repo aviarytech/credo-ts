@@ -13,9 +13,15 @@
     "faber": "ts-node src/FaberInquirer.ts"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@hyperledger/indy-vdr-nodejs": "^0.2.2",
     "@hyperledger/anoncreds-nodejs": "^0.2.2",
     "@hyperledger/aries-askar-nodejs": "^0.2.3",
+=======
+    "@hyperledger/indy-vdr-nodejs": "catalog:",
+    "@hyperledger/anoncreds-nodejs": "catalog:",
+    "@openwallet-foundation/askar-nodejs": "catalog:",
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
     "inquirer": "^8.2.5"
   },
   "devDependencies": {
@@ -29,6 +35,10 @@
     "@types/inquirer": "^8.2.6",
     "clear": "^0.1.0",
     "figlet": "^1.5.2",
+<<<<<<< HEAD
     "ts-node": "^10.4.0"
+=======
+    "ts-node": "catalog:"
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
   }
 }

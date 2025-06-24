@@ -14,22 +14,42 @@
     "verifier": "ts-node src/VerifierInquirer.ts"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@hyperledger/anoncreds-nodejs": "^0.2.2",
     "@hyperledger/aries-askar-nodejs": "^0.2.3",
     "@hyperledger/indy-vdr-nodejs": "^0.2.2",
     "express": "^4.18.1",
     "inquirer": "^8.2.5"
+=======
+    "@hyperledger/anoncreds-nodejs": "catalog:",
+    "@hyperledger/indy-vdr-nodejs": "catalog:",
+    "@koa/bodyparser": "^5.1.1",
+    "@openwallet-foundation/askar-nodejs": "catalog:",
+    "express": "catalog:",
+    "inquirer": "^8.2.5",
+    "jose": "^5.10.0",
+    "oidc-provider": "^8.8.1"
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
   },
   "devDependencies": {
     "@credo-ts/askar": "workspace:*",
     "@credo-ts/core": "workspace:*",
     "@credo-ts/node": "workspace:*",
     "@credo-ts/openid4vc": "workspace:*",
+<<<<<<< HEAD
     "@types/express": "^4.17.13",
+=======
+    "@types/express": "catalog:",
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
     "@types/figlet": "^1.5.4",
     "@types/inquirer": "^8.2.6",
     "clear": "^0.1.0",
     "figlet": "^1.5.2",
+<<<<<<< HEAD
     "ts-node": "^10.9.2"
+=======
+    "ts-node": "catalog:",
+    "tsx": "^4.19.4"
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
   }
 }

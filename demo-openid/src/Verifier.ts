@@ -9,6 +9,67 @@ import { Router } from 'express'
 import { BaseAgent } from './BaseAgent'
 import { Output } from './OutputClass'
 
+<<<<<<< HEAD
+=======
+const VERIFIER_HOST = process.env.VERIFIER_HOST ?? 'http://localhost:4000'
+
+const universityDegreeDcql = {
+  credential_sets: [
+    {
+      required: true,
+      options: [['UniversityDegreeCredential-vc+sd-jwt'], ['UniversityDegreeCredential-jwt_vc_json']],
+    },
+  ],
+  credentials: [
+    {
+      id: 'UniversityDegreeCredential-vc+sd-jwt',
+      format: 'vc+sd-jwt',
+      meta: {
+        vct_values: ['UniversityDegree'],
+      },
+    },
+    {
+      id: 'UniversityDegreeCredential-jwt_vc_json',
+      format: 'jwt_vc_json',
+      claims: [
+        {
+          path: ['vc', 'type'],
+          values: ['UniversityDegree'],
+        },
+      ],
+      meta: {
+        type_values: [['UniversityDegree']],
+      },
+    },
+  ],
+} satisfies DcqlQuery
+
+const openBadgeCredentialDcql = {
+  credential_sets: [
+    {
+      required: true,
+      options: [['OpenBadgeCredential-vc+sd-jwt'], ['OpenBadgeCredential-jwt_vc_json']],
+    },
+  ],
+  credentials: [
+    {
+      id: 'OpenBadgeCredential-vc+sd-jwt',
+      format: 'vc+sd-jwt',
+      meta: {
+        vct_values: ['OpenBadgeCredential'],
+      },
+    },
+    {
+      id: 'OpenBadgeCredential-jwt_vc_json',
+      format: 'jwt_vc_json',
+      meta: {
+        type_values: [['OpenBadgeCredential']],
+      },
+    },
+  ],
+} satisfies DcqlQuery
+
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
 const universityDegreePresentationDefinition = {
   id: 'UniversityDegreeCredential',
   purpose: 'Present your UniversityDegreeCredential to verify your education level.',

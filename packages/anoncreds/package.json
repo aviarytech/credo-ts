@@ -26,8 +26,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@astronautlabs/jsonpath": "^1.1.2",
+    "@astronautlabs/jsonpath": "catalog:",
     "@credo-ts/core": "workspace:*",
+<<<<<<< HEAD
     "@sphereon/pex-models": "^2.3.1",
     "big-integer": "^1.6.51",
     "bn.js": "^5.2.1",
@@ -45,5 +46,23 @@
   },
   "peerDependencies": {
     "@hyperledger/anoncreds-shared": "^0.2.2"
+=======
+    "@credo-ts/didcomm": "workspace:*",
+    "@sphereon/pex-models": "catalog:",
+    "class-transformer": "catalog:",
+    "class-validator": "catalog:",
+    "reflect-metadata": "catalog:"
+  },
+  "devDependencies": {
+    "@credo-ts/node": "workspace:*",
+    "@hyperledger/anoncreds-nodejs": "catalog:",
+    "@hyperledger/anoncreds-shared": "catalog:",
+    "rimraf": "catalog:",
+    "rxjs": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "@hyperledger/anoncreds-shared": "catalog:"
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
   }
 }

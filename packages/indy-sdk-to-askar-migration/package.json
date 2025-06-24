@@ -32,6 +32,7 @@
     "@credo-ts/node": "workspace:*"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@hyperledger/aries-askar-nodejs": "^0.2.3",
     "@hyperledger/aries-askar-shared": "^0.2.3",
     "rimraf": "^4.4.0",
@@ -39,5 +40,14 @@
   },
   "peerDependencies": {
     "@hyperledger/aries-askar-shared": "^0.2.3"
+=======
+    "@openwallet-foundation/askar-nodejs": "catalog:",
+    "@openwallet-foundation/askar-shared": "catalog:",
+    "rimraf": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "@openwallet-foundation/askar-shared": "catalog:"
+>>>>>>> 879ed2c9 (chore: deprecate node 18, update dependencies (#2317))
   }
 }
